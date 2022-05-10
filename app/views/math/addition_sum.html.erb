@@ -1,10 +1,10 @@
 <h1>Addition</h1>
 
 <p>First number</p>
-<p><%= @first_num %></p>
+<p><%= @first_num.to_s.sub(/\.?0+$/, '') %></p>
 <p>Second number</p>
-<p><%= @second_num %></p>
+<p><%= @second_num.to_s.sub(/\.?0+$/, '') %></p>
 <p>Result</p>
-<p><%= @sum%></p>
+<p><%= @sum.to_s.sub(/\.?0+$/, '') %></p>
 
 <a href="/add">Do another addition</a>
